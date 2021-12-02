@@ -1,6 +1,6 @@
 library(tidyverse)
 
-input <- read_csv("day2-input.txt", col_names = FALSE)[[1]]
+input <- read_csv("day02-input.txt", col_names = FALSE)[[1]]
 
 forward <- input[str_detect(input, "forward")]  %>%
   str_replace("forward ", "") %>%

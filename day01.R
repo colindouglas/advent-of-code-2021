@@ -1,6 +1,6 @@
 library(tidyverse)
 
-input <- read_csv("day1-input.txt", col_names = FALSE)[[1]]
+input <- read_csv("day01-input.txt", col_names = FALSE)[[1]]
 
 sum(lead(input, 1) > input, na.rm = TRUE)
 
