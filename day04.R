@@ -13,7 +13,7 @@ parse_card <- function(input, start) {
     str_split("\\s+", simplify = TRUE)  # Match any number of spaces
   
   class(out) <- "numeric"
-  
+  stopifnot(dim(out) == c(5, 5))
   out
 }
 
