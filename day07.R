@@ -12,11 +12,7 @@ sum(abs(input - median(input)))
 
 # The cost of one crab moving to a given position
 cost_one_crab <- function(start, end) {
-
-  if(start == end) return(0)
-  move <- abs(start - end)
-  sum(1:move)
-  
+  sum(seq_len(abs(start - end)))
 }
 
 # The cost of all crabs moving to a given position
